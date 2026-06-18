@@ -1,0 +1,2101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaTherm | Montaż i Serwis Systemów Grzewczych – Jelenia Góra</title>
+    <meta name="description" content="AquaTherm – profesjonalny montaż, uruchomienie i serwis pomp ciepła oraz kotłów gazowych w Jeleniej Górze i okolicach. Certyfikowani instalatorzy, gwarancja producenta.">
+    <meta name="keywords" content="pompy ciepła Jelenia Góra, kotły gazowe Jelenia Góra, montaż ogrzewania, serwis grzewczy, AquaTherm, instalacje grzewcze dolnośląskie">
+    <meta name="author" content="AquaTherm">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://aquatherm.pl/">
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aquatherm.pl/">
+    <meta property="og:title" content="AquaTherm | Montaż i Serwis Systemów Grzewczych – Jelenia Góra">
+    <meta property="og:description" content="Profesjonalny montaż pomp ciepła i kotłów gazowych. Certyfikowani instalatorzy, serwis gwarancyjny i pogwarancyjny.">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="AquaTherm">
+
+    <!-- Schema.org (dane strukturalne dla Google) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "AquaTherm",
+        "description": "Montaż, uruchomienie i serwis systemów grzewczych – pompy ciepła i kotły gazowe.",
+        "url": "https://aquatherm.pl",
+        "telephone": "+48723654998",
+        "email": "aquatherm.jg.pl@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Karola Miarki 18D",
+            "addressLocality": "Jelenia Góra",
+            "postalCode": "58-500",
+            "addressCountry": "PL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.8946531,
+            "longitude": 15.7160811
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "sameAs": [
+            "https://www.facebook.com/share/173ym5Axi2/",
+            "https://www.instagram.com/aquatherm18"
+        ]
+    }
+    </script>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- fallback jeśli brak pliku favicon.ico -->
+    <link rel="shortcut icon" href="logo.jpg" type="image/jpeg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --aqua: #6fb7d6;
+            --therm: #f0652d;
+            --navy: #1a2b3c;
+            --gray-bg: #f4f7f9;
+            --white: #ffffff;
+            --text-dark: #2d3436;
+            --text-light: #636e72;
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        /* RESET & BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--text-dark); background: var(--white); overflow-x: hidden; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+
+        /* HEADER */
+        header { background: var(--white); position: fixed; width: 100%; top: 0; z-index: 9999; box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+        .top-bar { background: var(--navy); color: var(--white); font-size: 12px; padding: 8px 5%; display: flex; justify-content: space-between; }
+        nav { max-width: 1600px; margin: 0 auto; padding: 15px 5%; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 20px; }
+        .logo-container { display: flex; align-items: center; gap: 10px; cursor: pointer; user-select: none; transition: transform 0.3s ease, opacity 0.3s ease; }
+        .logo-img { height: 70px; }
+        .nav-links { display: flex; gap: 35px; justify-self: center; }
+        .nav-links li { position: relative; }
+        .nav-links a { font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--navy); cursor: pointer; user-select: none; }
+        .nav-links a:hover { color: var(--therm); }
+        .nav-links a::after { content: ""; position: absolute; left: 0; bottom: -6px; width: 0; height: 2px; background: var(--therm); transition: width 0.3s ease; }
+        .nav-links a:hover::after { width: 100%; }
+        .logo-container:hover { transform: translateY(-3px) scale(1.03); }
+        .logo-container:active { transform: scale(0.96); opacity: 0.85; }
+
+        /* LANG SWITCHER */
+        .lang-switcher {
+            position: relative;
+            user-select: none;
+        }
+        .lang-current {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 12px;
+            border-radius: 10px;
+            border: 1.5px solid #e0e4ea;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--navy);
+            background: white;
+            transition: all 0.2s ease;
+        }
+        .lang-current:hover { border-color: var(--aqua); background: #f7fbfd; }
+        .lang-current .chevron-lang {
+            width: 8px; height: 8px;
+            border-right: 2px solid var(--navy);
+            border-bottom: 2px solid var(--navy);
+            transform: rotate(45deg) translateY(-2px);
+            transition: transform 0.3s ease;
+        }
+        .lang-switcher.open .chevron-lang {
+            transform: rotate(-135deg) translateY(2px);
+        }
+        .lang-dropdown {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+            border: 0.5px solid #e0e4ea;
+            overflow: hidden;
+            min-width: 150px;
+            opacity: 0;
+            transform: translateY(-8px);
+            pointer-events: none;
+            transition: all 0.25s ease;
+            z-index: 1000;
+        }
+        .lang-switcher.open .lang-dropdown {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+        .lang-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--navy);
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+        .lang-option:hover { background: #f7fbfd; }
+        .lang-option.active { color: var(--therm); background: #fff5f2; }
+        .lang-flag { font-size: 18px; }
+
+        /* HAMBURGER */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            justify-self: end;
+            padding: 4px;
+            border-radius: 8px;
+            transition: background 0.2s ease;
+        }
+        .hamburger:hover { background: rgba(0,0,0,0.05); }
+        .hamburger span {
+            display: block;
+            height: 2.5px;
+            background: var(--navy);
+            border-radius: 2px;
+            transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transform-origin: center;
+        }
+        .hamburger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+        .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+        .hamburger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+        /* MOBILE MENU OVERLAY */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9998;
+            background: rgba(26, 43, 60, 0.5);
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+        .mobile-menu.open { opacity: 1; }
+
+        .mobile-menu-panel {
+            position: absolute;
+            top: 0; right: 0;
+            width: min(320px, 85vw);
+            height: 100%;
+            background: var(--white);
+            padding: 110px 40px 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: -20px 0 60px rgba(0,0,0,0.15);
+        }
+        .mobile-menu.open .mobile-menu-panel { transform: translateX(0); }
+
+        .mobile-menu-panel a {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--navy);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            cursor: pointer;
+            transition: color 0.2s ease, padding-left 0.2s ease;
+        }
+        .mobile-menu-panel a:hover { color: var(--therm); padding-left: 8px; }
+        .mobile-menu-panel a:last-child { border-bottom: none; }
+
+        .mobile-contact-btn {
+            margin-top: 30px;
+            background: var(--therm);
+            color: white !important;
+            text-align: center;
+            border-radius: 12px;
+            padding: 16px 0 !important;
+            border-bottom: none !important;
+        }
+        .mobile-contact-btn:hover { background: var(--aqua); padding-left: 0 !important; }
+
+        @media (max-width: 1024px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            nav { grid-template-columns: auto 1fr auto; }
+        }
+
+        /* HERO */
+        .hero { height: 90vh; position: relative; display: flex; align-items: center; color: white; background: linear-gradient(90deg, rgba(0,0,0,0.7) 30%, transparent 100%), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1470') center/cover; }
+        .hero-content { padding: 0 10%; max-width: 900px; }
+        .hero-content h1 { font-size: clamp(40px, 5vw, 75px); font-weight: 800; line-height: 1.1; margin-bottom: 25px; }
+        .hero-tagline { font-size: clamp(14px, 1.6vw, 18px); font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: var(--aqua); margin-bottom: 12px; }
+        .hero-content p { font-size: 22px; font-weight: 300; margin-bottom: 40px; opacity: 0.9; }
+        .brand-aqua { color: var(--aqua); }
+        .brand-therm { color: var(--therm); }
+
+        /* SOLUTIONS PICKER */
+        .solutions-picker { margin-top: -80px; position: relative; z-index: 10; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 0 18px; }
+        .solutions-grid { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 12px; row-gap: 28px; justify-content: center; max-width: 1080px; margin: 0 auto; }
+        .solution-card { background: #ffffff; border-radius: 12px; padding: 16px; box-shadow: 0 14px 30px rgba(16,24,40,0.06); transition: transform 0.35s ease, box-shadow 0.35s ease; cursor: pointer; display: flex; flex-direction: column; gap: 12px; }
+        .solution-card:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 22px 48px rgba(0,0,0,0.12); }
+        .solution-media { width: 100%; height: 200px; border-radius: 10px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        .solution-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .solution-card h3 { font-size: 18px; margin: 8px 8px 4px; color: var(--navy); }
+        .solution-card p { font-size: 14px; margin: 0 8px 10px; color: var(--text-light); }
+
+        /* SECTIONS */
+        .section { padding: 120px 10%; }
+        .section-header { text-align: center; max-width: 800px; margin: 0 auto 80px; }
+        .section-header h2 { font-size: 42px; font-weight: 800; color: var(--navy); margin-bottom: 20px; }
+        .section-header p { font-size: 18px; color: var(--text-light); }
+        .accent { color: var(--therm); }
+
+        /* SEGMENT GRID */
+        .segment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; }
+        .segment-box { position: relative; height: 500px; overflow: hidden; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); cursor: pointer; }
+        .segment-box img { width: 100%; height: 100%; object-fit: cover; transition: 1s; }
+        .segment-box:hover img { transform: scale(1.1); }
+        .segment-overlay { position: absolute; inset: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 50px; display: flex; flex-direction: column; justify-content: flex-end; color: white; }
+        .segment-overlay h3 { font-size: 32px; margin-bottom: 10px; }
+
+        /* TECH GRID (home "Co Oferujemy" & "Dlaczego") */
+        .tech-section { background: var(--gray-bg); }
+        .tech-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .tech-grid .tech-item h4 { font-size: 20px; color: var(--therm); margin-bottom: 15px; font-weight: 700; }
+        .tech-grid .tech-item:hover h4 { color: var(--aqua); }
+
+        /* BRANDS */
+        .brands-section { margin-top: 80px; }
+        .brands-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 30px; max-width: 500px; margin: 50px auto 0; }
+        .brand-card { background: white; border-radius: 14px; padding: 35px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: all 0.35s ease; }
+        .brand-card img { max-width: 140px; max-height: 60px; opacity: 0.85; transition: all 0.35s ease; }
+        .brand-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,0.12); }
+        .brand-card:hover img { opacity: 1; transform: scale(1.05); }
+
+        /* PRODUCT CARDS (Co Oferujemy / Dlaczego sections - h4 based) */
+        .tech-item { background: #ffffff; border-radius: 22px; padding: 30px 26px 32px; box-shadow: 0 25px 60px rgba(0,0,0,0.06); transition: transform .35s ease, box-shadow .35s ease; position: relative; overflow: hidden; }
+        .tech-item:hover { transform: translateY(-10px); box-shadow: 0 40px 80px rgba(0,0,0,0.12); }
+        .tech-item p { font-size: 15px; opacity: 0.75; margin-bottom: 10px; }
+        .tech-item::before { content: ""; position: absolute; inset: 0; background: linear-gradient(120deg, rgba(255,255,255,0.6), rgba(255,255,255,0)); opacity: 0; transition: opacity .4s ease; pointer-events: none; }
+        .tech-item:hover::before { opacity: 1; }
+
+        /* PRODUCT CATALOG CARDS */
+        .product-card {
+            background: #ffffff;
+            border-radius: 22px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.06);
+            transition: transform .35s ease, box-shadow .35s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 40px 80px rgba(0,0,0,0.12);
+        }
+        .product-card-media {
+            position: relative;
+            height: 200px;
+            background: radial-gradient(circle at center, #f4f7fb 0%, #ffffff 70%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .product-card-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 20px;
+        }
+        .product-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: var(--navy);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 6px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+        .product-badge.boiler { background: var(--therm); }
+        .product-card-body {
+            padding: 24px 26px 28px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 6px;
+        }
+        .product-card-body h3 { font-size: 20px; font-weight: 800; margin-bottom: 2px; color: var(--navy); }
+        .product-specs {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin: 6px 0 4px;
+        }
+        .product-spec-pill {
+            background: var(--gray-bg);
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .product-spec-pill .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--aqua);
+            flex-shrink: 0;
+        }
+        .product-spec-pill.therm .dot { background: var(--therm); }
+        .product-card-body p { font-size: 15px; opacity: 0.75; margin-bottom: 0; }
+        .product-price {
+            font-size: 22px;
+            font-weight: 900;
+            color: var(--therm);
+            margin-top: 4px;
+        }
+        .product-price .price-from {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 4px;
+        }
+        .product-card-foot {
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-top: 14px;
+        }
+
+
+        /* CARD MORE / TOGGLE */
+        .card-more { opacity: 0; max-height: 0; overflow: hidden; transition: opacity .35s ease, max-height .35s ease, margin .35s ease; pointer-events: none; }
+        .card-more.open { opacity: 1; max-height: 200px; pointer-events: auto; margin-top: 8px; }
+        .card-toggle { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; color: var(--therm); cursor: pointer; user-select: none; transition: opacity .25s ease, transform .25s ease; }
+        .product-card-foot .card-toggle { margin: 0; }
+        .card-toggle:hover { opacity: .75; transform: translateY(-1px); }
+        .card-toggle .chevron { width: 10px; height: 10px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform .35s ease; }
+        .card-toggle.open .chevron { transform: rotate(-135deg) translateY(2px); }
+
+        /* BUTTONS */
+        .btn { padding: 16px 35px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; border: none; border-radius: 4px; display: inline-block; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .btn-aqua { background: var(--aqua); color: white; border-radius: 14px; font-weight: 700; }
+        .btn-outline { background: transparent; color: #fff; border: 2px solid #fff; border-radius: 14px; font-weight: 700; }
+        button:hover, .btn:hover { transform: translateY(-6px); box-shadow: 0 12px 25px rgba(0,0,0,0.18); }
+
+        /* TYPES GRID */
+        .types-grid { display: flex; gap: 20px; justify-content: center; margin: 40px 0; }
+        .type-card { padding: 16px 26px; border-radius: 14px; border: 2px solid var(--aqua); color: var(--navy); font-weight: 700; cursor: pointer; transition: 0.3s ease; background: white; }
+        .type-card:hover { background: var(--aqua); color: white; transform: translateY(-3px); }
+
+        /* WOLF CARDS GRID */
+        .wolf-style-cards { max-width: 1400px; margin: 60px auto; padding: 0 20px; }
+        .wolf-cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+
+        /* SYSTEMS TITLE */
+        .systems-title { text-align: center; max-width: 760px; margin: 0 auto 80px; opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
+        .systems-title.active { opacity: 1; transform: translateY(0); }
+        .systems-title h2 { font-size: 44px; font-weight: 800; color: var(--navy); margin-bottom: 12px; }
+        .systems-title p { font-size: 17px; opacity: 0.75; line-height: 1.6; }
+        .title-line { width: 0; height: 3px; background: linear-gradient(90deg, var(--aqua), var(--therm)); margin: 18px auto 22px; border-radius: 2px; transition: width 0.8s ease; }
+        .systems-title.active .title-line { width: 120px; }
+
+        /* PRODUCT SEARCH */
+        .products-search { max-width: 520px; margin: 0 auto 50px; position: relative; }
+        .products-search input { width: 100%; padding: 16px 18px; border-radius: 14px; border: 2px solid #e5e8ef; font-size: 15px; font-weight: 600; outline: none; font-family: inherit; background: #fafafa; }
+        .products-search input:focus { border-color: var(--aqua); background: white; }
+        .search-results { position: absolute; top: 110%; left: 0; right: 0; background: #fff; border-radius: 14px; box-shadow: 0 25px 60px rgba(0,0,0,0.08); overflow: hidden; display: none; z-index: 20; }
+        .search-item { padding: 14px 18px; cursor: pointer; font-size: 14px; font-weight: 600; }
+        .search-item:hover { background: #f4f7fb; }
+
+        /* TECH PAGE */
+        #tech { padding: 60px 0; background: linear-gradient(180deg, #f7f9fb 0%, #ffffff 100%); }
+        #tech .tech-header { text-align: center; max-width: 720px; margin: 0 auto 80px; }
+        #tech .tech-header h2 { font-size: 42px; font-weight: 900; color: var(--navy); }
+        #tech .tech-header p { margin-top: 18px; font-size: 18px; opacity: 0.75; }
+        #tech .tech-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
+        #tech .tech-box { background: #ffffff; border-radius: 24px; padding: 40px 34px; box-shadow: 0 30px 70px rgba(0,0,0,0.06); transition: transform .35s ease, box-shadow .35s ease; position: relative; overflow: hidden; }
+        #tech .tech-box:hover { transform: translateY(-10px); box-shadow: 0 45px 90px rgba(0,0,0,0.12); }
+        #tech .tech-box h3 { font-size: 20px; font-weight: 800; margin-bottom: 10px; color: var(--navy); }
+        #tech .tech-box p { font-size: 15px; line-height: 1.6; opacity: 0.75; }
+        #tech .tech-box::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at top left, rgba(0,180,255,0.12), transparent 60%); opacity: 0; transition: opacity .4s ease; }
+        #tech .tech-box:hover::before { opacity: 1; }
+        #tech .title-line { width: 120px; height: 3px; background: linear-gradient(90deg, var(--aqua), var(--therm)); margin: 16px auto 22px; border-radius: 2px; }
+        #tech .tech-line { width: 32px; height: 3px; background: linear-gradient(90deg, var(--aqua), var(--therm)); border-radius: 2px; margin-bottom: 14px; }
+        #tech .tech-text-block { max-width: 760px; margin: 20px auto 20px; text-align: center; }
+        #tech .tech-text-block h3 { font-size: 32px; font-weight: 900; color: var(--navy); margin-bottom: 18px; }
+        #tech .tech-text-block p { font-size: 18px; line-height: 1.7; opacity: 0.75; }
+
+        /* TRUST */
+        #trust { background: linear-gradient(180deg, #ffffff 0%, #f7f9fb 100%); padding: 10px 0; }
+        .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; text-align: center; }
+        .trust-item { background: #ffffff; border-radius: 22px; padding: 40px 20px; box-shadow: 0 25px 60px rgba(0,0,0,0.06); transition: transform .35s ease, box-shadow .35s ease; }
+        .trust-item:hover { transform: translateY(-8px); box-shadow: 0 40px 80px rgba(0,0,0,0.12); }
+        .trust-number { font-size: 48px; font-weight: 900; background: linear-gradient(90deg, var(--aqua), var(--therm)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: block; margin-bottom: 12px; }
+        .trust-item p { font-size: 15px; opacity: 0.75; }
+
+        /* SERVICE PAGE */
+        .service-cta { margin-top: 80px; padding: 50px; border-radius: 26px; background: linear-gradient(135deg, var(--aqua), #1fd1c3); color: white; text-align: center; }
+        .service-cta h3 { font-size: 26px; margin-bottom: 20px; }
+
+        /* CONTACT */
+        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+        .form-group { margin-bottom: 20px; }
+        input, select, textarea { width: 100%; padding: 18px; border: 1px solid #ddd; background: #fafafa; font-family: inherit; font-size: 16px; border-radius: 4px; }
+        input:focus, textarea:focus { border-color: var(--therm); outline: none; background: white; }
+        .form-message { margin-top: 15px; font-size: 14px; }
+
+        /* FOOTER */
+        footer { background: var(--navy); color: white; padding: 100px 10% 50px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 60px; }
+        .footer-logo-clean { height: 120px; opacity: 0.9; }
+        .footer-col h5 { font-size: 18px; margin-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+        .footer-col li { margin-bottom: 12px; opacity: 0.7; font-size: 14px; transition: transform 0.3s ease, color 0.3s ease; }
+        .footer-col li:hover { opacity: 1; color: var(--aqua); cursor: pointer; transform: translateY(-4px); }
+        .footer-socials { display: flex; gap: 15px; margin-top: 25px; }
+        .footer-socials a { width: 42px; height: 42px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; color: white; cursor: pointer; transition: transform 0.3s ease, background 0.3s ease; }
+        .footer-socials a:hover { transform: translateY(-5px) scale(1.05); background: var(--aqua); }
+
+        /* TOP PHONE */
+        .top-phone a { color: white; cursor: pointer; transition: color 0.3s ease, transform 0.3s ease; display: inline-block; }
+        .top-phone a:hover { color: var(--aqua); transform: translateY(-2px); }
+
+        /* PAGE ENGINE */
+        .page { display: none; padding-top: 130px; animation: fadeInUp 0.6s ease both; }
+        .page.active { display: block; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* SCROLL REVEAL */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* HIDDEN PRODUCTS */
+        .tech-item.is-hidden, .product-card.is-hidden { display: none !important; }
+
+        /* RESPONSIVE */
+        @media (max-width: 1200px) { .wolf-cards-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 1024px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            nav { grid-template-columns: auto 1fr auto; }
+            .tech-grid { grid-template-columns: 1fr; }
+            .contact-container { grid-template-columns: 1fr; }
+            #tech .tech-grid { grid-template-columns: repeat(2, 1fr); }
+            .trust-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 900px) { .wolf-cards-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 860px) { .solutions-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 640px) {
+            .wolf-cards-grid { grid-template-columns: 1fr; }
+            #tech .tech-grid { grid-template-columns: 1fr; }
+            .trust-grid { grid-template-columns: 1fr; }
+        }
+
+        /* CONTACT ICONS */
+        .contact-item h3 { display: flex; align-items: center; gap: 10px; }
+        .contact-item svg { width: 20px; height: 20px; color: var(--therm); }
+
+        /* PAGE LOADER */
+        .loader-overlay {
+            position: fixed;
+            inset: 0;
+            background: var(--navy);
+            z-index: 999999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .loader-overlay.hide {
+            opacity: 0;
+            transform: scale(1.04);
+            pointer-events: none;
+        }
+        .loader-logo {
+            font-size: 42px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            animation: loaderPulse 1.5s ease infinite;
+        }
+        .loader-logo .aqua { color: var(--aqua); }
+        .loader-logo .therm { color: var(--therm); }
+        @keyframes loaderPulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(0.97); }
+        }
+        .loader-bar-wrap {
+            width: 200px;
+            height: 3px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .loader-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--aqua), var(--therm));
+            border-radius: 3px;
+            animation: loaderFill 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        @keyframes loaderFill {
+            0% { width: 0%; }
+            60% { width: 75%; }
+            100% { width: 100%; }
+        }
+        .loader-text {
+            font-size: 12px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+    /* 404 PAGE */
+        .notfound-section {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .notfound-content {
+            text-align: center;
+            max-width: 600px;
+        }
+        .notfound-code {
+            font-size: 120px;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(90deg, var(--aqua), var(--therm));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .notfound-content h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--navy);
+            margin-bottom: 16px;
+        }
+        .notfound-content p {
+            font-size: 17px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        .btn-outline-dark {
+            background: transparent;
+            color: var(--navy);
+            border: 2px solid var(--navy);
+            border-radius: 14px;
+            font-weight: 700;
+        }
+        @media (max-width: 640px) {
+            .notfound-code { font-size: 80px; }
+            .notfound-content h2 { font-size: 24px; }
+        }
+
+    /* TESTIMONIALS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .testimonial-card {
+            background: #ffffff;
+            border-radius: 22px;
+            padding: 32px 28px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.06);
+            transition: transform .35s ease, box-shadow .35s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 35px 80px rgba(0,0,0,0.12);
+        }
+        .testimonial-stars {
+            color: var(--therm);
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+        .testimonial-text {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-dark);
+            opacity: 0.85;
+            flex-grow: 1;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            padding-top: 16px;
+        }
+        .testimonial-avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--aqua), var(--therm));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        .testimonial-author-info strong {
+            display: block;
+            font-size: 14px;
+            color: var(--navy);
+            font-weight: 800;
+        }
+        .testimonial-author-info span {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+        @media (max-width: 1024px) {
+            .testimonials-grid { grid-template-columns: 1fr; }
+        }
+
+    /* WHATSAPP BUTTON */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 35px;
+            left: 35px;
+            width: 58px;
+            height: 58px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            text-decoration: none;
+            z-index: 9990;
+            box-shadow: 0 8px 25px rgba(37,211,102,0.4);
+            transition: all 0.3s ease;
+            animation: whatsappPulse 2.5s ease infinite;
+        }
+        .whatsapp-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(37,211,102,0.5);
+        }
+        @keyframes whatsappPulse {
+            0%, 100% { box-shadow: 0 8px 25px rgba(37,211,102,0.4); }
+            50% { box-shadow: 0 8px 25px rgba(37,211,102,0.4), 0 0 0 10px rgba(37,211,102,0.15); }
+        }
+        @media (max-width: 640px) {
+            .whatsapp-btn { bottom: 100px; left: 20px; width: 52px; height: 52px; font-size: 25px; }
+        }
+
+    /* SCROLL TO TOP */
+        .scroll-top {
+            position: fixed;
+            bottom: 35px;
+            right: 35px;
+            width: 50px;
+            height: 50px;
+            background: var(--therm);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 9990;
+            box-shadow: 0 8px 25px rgba(240,101,45,0.4);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .scroll-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+        .scroll-top:hover {
+            background: var(--aqua);
+            transform: translateY(-4px) !important;
+            box-shadow: 0 12px 30px rgba(111,183,214,0.5);
+        }
+        @media (max-width: 640px) {
+            .scroll-top { bottom: 100px; right: 20px; width: 44px; height: 44px; font-size: 18px; }
+        }
+    </style>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div class="loader-overlay" id="loaderOverlay">
+    <div class="loader-logo">
+        <span class="aqua">Aqua</span><span class="therm">Therm</span>
+    </div>
+    <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+    </div>
+    <div class="loader-text" data-i18n="loading">Ładowanie...</div>
+</div>
+
+<header>
+    <div class="top-bar">
+        <span class="top-phone">
+            📞 Infolinia Techniczna:
+            <a href="tel:+48723654998"><strong>+48 723 654 998</strong></a>
+        </span>
+    </div>
+    <nav>
+        <div class="logo-container" onclick="showPage('home')">
+            <img src="logo.jpg" alt="AquaTherm" class="logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a data-i18n="nav_home" onclick="showPage('home')">Start</a></li>
+            <li><a data-i18n="nav_products" onclick="showPage('products'); resetProductsPage();">Systemy Grzewcze</a></li>
+            <li><a data-i18n="nav_tech" onclick="showPage('tech')">Technologia</a></li>
+            <li><a data-i18n="nav_contact" onclick="showPage('contact')">Kontakt</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:12px;justify-self:end;">
+            <div class="lang-switcher" id="langSwitcher">
+                <div class="lang-current" onclick="toggleLangMenu()">
+                    <span class="lang-flag" id="currentFlag">🇵🇱</span>
+                    <span id="currentLang">PL</span>
+                    <span class="chevron-lang"></span>
+                </div>
+                <div class="lang-dropdown" id="langDropdown">
+                    <div class="lang-option active" onclick="setLang('pl')">
+                        <span class="lang-flag">🇵🇱</span> Polski
+                    </div>
+                    <div class="lang-option" onclick="setLang('en')">
+                        <span class="lang-flag">🇬🇧</span> English
+                    </div>
+                    <div class="lang-option" onclick="setLang('ua')">
+                        <span class="lang-flag">🇺🇦</span> Українська
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" onclick="closeMobileMenuOnOverlay(event)">
+    <div class="mobile-menu-panel">
+        <a data-i18n="nav_home" onclick="navTo('home')">Start</a>
+        <a data-i18n="nav_products" onclick="navTo('products')">Systemy Grzewcze</a>
+        <a data-i18n="nav_tech" onclick="navTo('tech')">Technologia</a>
+        <a data-i18n="serv_title_short" onclick="navTo('service')">Serwis</a>
+        <a data-i18n="nav_contact" onclick="navTo('contact')" class="mobile-contact-btn">Kontakt</a>
+    </div>
+</div>
+
+<!-- PAGE: HOME -->
+<div id="home" class="page active">
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-tagline" data-i18n="hero_title">Profesjonalne Systemy Grzewcze</p>
+            <h1><span class="brand-aqua">Aqua</span><span class="brand-therm">Therm</span></h1>
+            <p data-i18n="hero_sub">Montaż, uruchomienie, serwis i opieka techniczna systemów grzewczych realizowane przez doświadczonych instalatorów.</p>
+            <div style="display:flex; gap: 20px;">
+                <button class="btn btn-aqua" data-i18n="hero_btn1" onclick="showPage('products')">Przeglądaj Systemy</button>
+                <button class="btn btn-outline" data-i18n="hero_btn2" onclick="showPage('tech')">O Naszej Technologii</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions-picker reveal">
+        <div class="solutions-grid">
+            <div class="solution-card" onclick="showPage('products')" role="link" tabindex="0">
+                <div class="solution-media">
+                    <img src="https://i.imgur.com/R3IdSVL.jpeg" alt="Modernizacja">
+                </div>
+                <h3 data-i18n="sol1_title">Modernizacja — Dom</h3>
+                <p data-i18n="sol1_desc">Wymień przestarzały system na efektywne rozwiązanie.</p>
+            </div>
+            <div class="solution-card" onclick="showPage('products')" role="link" tabindex="0">
+                <div class="solution-media">
+                    <img src="https://i.imgur.com/xnbCQCK_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" alt="Nowy Budynek">
+                </div>
+                <h3 data-i18n="sol2_title">Nowy Budynek</h3>
+                <p data-i18n="sol2_desc">Dobór i montaż systemów dopasowanych do projektu.</p>
+            </div>
+            <div class="solution-card" onclick="showPage('service')" role="link" tabindex="0">
+                <div class="solution-media">
+                    <img src="https://i.pinimg.com/1200x/23/bd/83/23bd83eb5271f91ced38325b274b0de4.jpg" alt="Serwis i Gwarancja">
+                </div>
+                <h3 data-i18n="sol3_title">Serwis i Gwarancja</h3>
+                <p data-i18n="sol3_desc">Opieka techniczna, przeglądy i pełne wsparcie po montażu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section brands-section reveal">
+        <div class="section-header">
+            <h2><span data-i18n="partners_title">Nasi</span> <span class="accent" data-i18n="partners_accent">Partnerzy</span></h2>
+            <p data-i18n="partners_desc">Współpracujemy wyłącznie z renomowanymi producentami systemów grzewczych.</p>
+        </div>
+        <div class="brands-grid">
+            <div class="brand-card" onclick="filterByBrand('wolf')">
+                <img src="wolf.svg" alt="WOLF">
+            </div>
+        </div>
+    </section>
+
+    <section class="section reveal">
+        <div class="section-header">
+            <h2><span data-i18n="offer_title">Co</span> <span class="accent" data-i18n="offer_accent">Oferujemy</span></h2>
+            <p data-i18n="offer_desc">Kompleksowa obsługa systemów grzewczych – od doboru po serwis.</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <h4 data-i18n="offer1_title">Doradztwo i dobór systemu</h4>
+                <p data-i18n="offer1_desc">Pomagamy dobrać optymalne rozwiązanie dopasowane do budynku i potrzeb użytkownika.</p>
+            </div>
+            <div class="tech-item">
+                <h4 data-i18n="offer2_title">Montaż i uruchomienie</h4>
+                <p data-i18n="offer2_desc">Profesjonalny montaż zgodny z wytycznymi producentów.</p>
+            </div>
+            <div class="tech-item">
+                <h4 data-i18n="offer3_title">Serwis i opieka techniczna</h4>
+                <p data-i18n="offer3_desc">Wsparcie gwarancyjne i pogwarancyjne, przeglądy oraz serwis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header reveal">
+            <h2><span data-i18n="exp_title">Nasze Obszary</span> <span class="accent" data-i18n="exp_accent">Eksperckie</span></h2>
+            <p data-i18n="exp_desc">Skupiamy się na tym, co robimy najlepiej.</p>
+        </div>
+        <div class="segment-grid">
+            <div class="segment-box" onclick="showPage('products'); filterByType('pompy')">
+                <img src="https://i.imgur.com/JCfgaA1_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" alt="Pompy ciepła">
+                <div class="segment-overlay">
+                    <h3 data-i18n="exp1">Pompy Ciepła</h3>
+                    <span style="font-weight: 700; margin-top: 20px;" data-i18n="see_models">ZOBACZ MODELE →</span>
+                </div>
+            </div>
+            <div class="segment-box" onclick="showPage('products'); filterByType('kotly')">
+                <img src="https://i.imgur.com/1Fj22xC_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" alt="Kotły">
+                <div class="segment-overlay">
+                    <h3 data-i18n="exp2">Kotły Gazowe</h3>
+                    <span style="font-weight: 700; margin-top: 20px;" data-i18n="see_models">ZOBACZ MODELE →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section tech-section">
+        <div class="section-header">
+            <h2><span data-i18n="why_title">Dlaczego Warto Wybrać</span> <span class="accent" data-i18n="why_accent">AquaTherm?</span></h2>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-item reveal">
+                <h4 data-i18n="why1_title">Doświadczenie i precyzja wykonania</h4>
+                <p data-i18n="why1_desc">Realizujemy instalacje z dbałością o komfort i poprawną pracę urządzeń, zgodnie z zaleceniami producentów.</p>
+            </div>
+            <div class="tech-item">
+                <h4 data-i18n="why2_title">Nowoczesne systemy sterowania</h4>
+                <p data-i18n="why2_desc">Wykonujemy instalacje przygotowane do integracji z systemami smart home.</p>
+            </div>
+            <div class="tech-item">
+                <h4 data-i18n="why3_title">Wsparcie serwisowe i gwarancyjne</h4>
+                <p data-i18n="why3_desc">Zapewniamy poprawny montaż, dokumentację oraz wsparcie w zakresie przeglądów i serwisu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section reveal">
+        <div class="section-header">
+            <h2><span data-i18n="reviews_title">Opinie</span> <span class="accent" data-i18n="reviews_accent">Naszych Klientów</span></h2>
+            <p data-i18n="reviews_desc">Zaufali nam mieszkańcy Jeleniej Góry i okolic. Sprawdź, co mówią o naszych usługach.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text" data-i18n="review1_text">Profesjonalny montaż pompy ciepła, ekipa pracowała sprawnie i czysto. Doradcy pomogli wybrać odpowiedni model do naszego domu. Polecam!</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MK</div>
+                    <div class="testimonial-author-info">
+                        <strong data-i18n="review1_name">Marek K.</strong>
+                        <span data-i18n="review1_loc">Jelenia Góra</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text" data-i18n="review2_text">Wymiana starego kotła na nowy kondensacyjny przebiegła bez problemów. Szybka realizacja, uczciwa cena i pełna dokumentacja gwarancyjna.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">AW</div>
+                    <div class="testimonial-author-info">
+                        <strong data-i18n="review2_name">Anna W.</strong>
+                        <span data-i18n="review2_loc">Karpacz</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text" data-i18n="review3_text">Korzystam z serwisu AquaTherm od kilku lat. Przeglądy zawsze na czas, a ekipa odpowiada szybko na każde pytanie. Bardzo solidna firma.</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">TN</div>
+                    <div class="testimonial-author-info">
+                        <strong data-i18n="review3_name">Tomasz N.</strong>
+                        <span data-i18n="review3_loc">Szklarska Poręba</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- PAGE: PRODUCTS -->
+<div id="products" class="page">
+    <div class="section">
+        <div class="systems-title reveal">
+            <h2><span data-i18n="prod_title">Systemy</span> <span class="accent" data-i18n="prod_accent">Grzewcze</span></h2>
+            <div class="title-line"></div>
+            <p data-i18n="prod_desc">Nowoczesne pompy ciepła i kotły zaprojektowane z myślą o maksymalnej efektywności i komforcie użytkowania.</p>
+        </div>
+
+        <div class="products-search">
+            <input type="text" id="productSearch" data-i18n="prod_search" placeholder="Szukaj systemu (np. Pro-Air, Gas-Core...)" oninput="searchProducts(this.value)">
+            <div id="searchResults" class="search-results"></div>
+        </div>
+
+        <div class="types-grid">
+            <div class="type-card" data-i18n="filter_all" onclick="filterByType('all')">Wszystkie</div>
+            <div class="type-card" data-i18n="filter_pumps" onclick="filterByType('pompy')">Pompy ciepła</div>
+            <div class="type-card" data-i18n="filter_boilers" onclick="filterByType('kotly')">Kotły</div>
+        </div>
+
+        <div class="wolf-style-cards">
+            <div class="wolf-cards-grid">
+
+                <div class="product-card" data-brand="wolf" data-type="pompy">
+                    <div class="product-card-media">
+                        <span class="product-badge" data-i18n="badge_pump">Pompa ciepła</span>
+                        <img src="https://i.imgur.com/R3IdSVL_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" alt="Pompa ciepła Pro-Air 8kW">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Pro-Air 8kW</h3>
+                        <div class="product-price"><span class="price-from" data-i18n="price_from">od</span>18 900 zł</div>
+                        <div class="product-specs">
+                            <span class="product-spec-pill"><span class="dot"></span>COP 4.8</span>
+                            <span class="product-spec-pill"><span class="dot"></span>8 kW</span>
+                        </div>
+                        <p>Pompa ciepła monoblok, COP 4.8</p>
+                        <div class="card-more">
+                            <p>Pompa ciepła monoblok z wysoką sprawnością COP 4.8, niska emisja hałasu, idealna dla małych domów.</p>
+                        </div>
+                        <div class="product-card-foot">
+                            <div class="card-toggle" onclick="toggleCard(this)">
+                                <span class="label" data-i18n="more">Więcej</span>
+                                <span class="chevron"></span>
+                            </div>
+                            <button class="btn btn-aqua" style="width:100%;" data-i18n="contact_btn" onclick="showPage('contact')">Skontaktuj się z nami</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-brand="wolf" data-type="pompy">
+                    <div class="product-card-media">
+                        <span class="product-badge" data-i18n="badge_pump">Pompa ciepła</span>
+                        <img src="https://i.imgur.com/vH3EonO.png" alt="Pompa ciepła Pro-Air 12kW">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Pro-Air 12kW</h3>
+                        <div class="product-price"><span class="price-from" data-i18n="price_from">od</span>24 500 zł</div>
+                        <div class="product-specs">
+                            <span class="product-spec-pill"><span class="dot"></span>COP 5.0</span>
+                            <span class="product-spec-pill"><span class="dot"></span>12 kW</span>
+                        </div>
+                        <p>Pompa ciepła do nowoczesnych domów</p>
+                        <div class="card-more">
+                            <p>Pompa ciepła z wydajnością 12kW, COP 5.0, sterowanie smart home, integracja z systemami automatyki.</p>
+                        </div>
+                        <div class="product-card-foot">
+                            <div class="card-toggle" onclick="toggleCard(this)">
+                                <span class="label" data-i18n="more">Więcej</span>
+                                <span class="chevron"></span>
+                            </div>
+                            <button class="btn btn-aqua" style="width:100%;" data-i18n="contact_btn" onclick="showPage('contact')">Skontaktuj się z nami</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-brand="wolf" data-type="pompy">
+                    <div class="product-card-media">
+                        <span class="product-badge" data-i18n="badge_pump">Pompa ciepła</span>
+                        <img src="https://i.imgur.com/vH3EonO.png" alt="Pompa ciepła Pro-Air 15kW">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Pro-Air 15kW</h3>
+                        <div class="product-price"><span class="price-from" data-i18n="price_from">od</span>29 900 zł</div>
+                        <div class="product-specs">
+                            <span class="product-spec-pill"><span class="dot"></span>COP 5.2</span>
+                            <span class="product-spec-pill"><span class="dot"></span>15 kW</span>
+                        </div>
+                        <p>Pompa ciepła dla dużych budynków</p>
+                        <div class="card-more">
+                            <p>Pompa ciepła high-end z wydajnością 15kW, COP 5.2, zaawansowana regulacja, gwarancja 5 lat.</p>
+                        </div>
+                        <div class="product-card-foot">
+                            <div class="card-toggle" onclick="toggleCard(this)">
+                                <span class="label" data-i18n="more">Więcej</span>
+                                <span class="chevron"></span>
+                            </div>
+                            <button class="btn btn-aqua" style="width:100%;" data-i18n="contact_btn" onclick="showPage('contact')">Skontaktuj się z nami</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-brand="wolf" data-type="kotly">
+                    <div class="product-card-media">
+                        <span class="product-badge boiler" data-i18n="badge_boiler">Kocioł</span>
+                        <img src="https://i.imgur.com/wP0lU4u.png" alt="Kocioł gazowy Gas-Core v2">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Gas-Core v2</h3>
+                        <div class="product-price"><span class="price-from" data-i18n="price_from">od</span>8 400 zł</div>
+                        <div class="product-specs">
+                            <span class="product-spec-pill therm"><span class="dot"></span>98% sprawność</span>
+                            <span class="product-spec-pill therm"><span class="dot"></span>-30% paliwa</span>
+                        </div>
+                        <p>Kocioł kondensacyjny z sprawnością 98%</p>
+                        <div class="card-more">
+                            <p>Kocioł kondensacyjny klasy premium, sprawność 98%, oszczędność paliwa do 30%, cicha praca.</p>
+                        </div>
+                        <div class="product-card-foot">
+                            <div class="card-toggle" onclick="toggleCard(this)">
+                                <span class="label" data-i18n="more">Więcej</span>
+                                <span class="chevron"></span>
+                            </div>
+                            <button class="btn btn-aqua" style="width:100%;" data-i18n="contact_btn" onclick="showPage('contact')">Skontaktuj się z nami</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-brand="wolf" data-type="kotly">
+                    <div class="product-card-media">
+                        <span class="product-badge boiler" data-i18n="badge_boiler">Kocioł</span>
+                        <img src="https://i.imgur.com/wP0lU4u.png" alt="Kocioł gazowy Gas-Core Mini">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Gas-Core Mini</h3>
+                        <div class="product-price"><span class="price-from" data-i18n="price_from">od</span>6 200 zł</div>
+                        <div class="product-specs">
+                            <span class="product-spec-pill therm"><span class="dot"></span>Kompakt</span>
+                            <span class="product-spec-pill therm"><span class="dot"></span>Montaż ścienny</span>
+                        </div>
+                        <p>Kompaktowy kocioł do mieszkań</p>
+                        <div class="card-more">
+                            <p>Mały kocioł do mieszkań i apartamentów, doskonała regulacja, montaż ścienny, minimalny hałas eksploatacyjny.</p>
+                        </div>
+                        <div class="product-card-foot">
+                            <div class="card-toggle" onclick="toggleCard(this)">
+                                <span class="label" data-i18n="more">Więcej</span>
+                                <span class="chevron"></span>
+                            </div>
+                            <button class="btn btn-aqua" style="width:100%;" data-i18n="contact_btn" onclick="showPage('contact')">Skontaktuj się z nami</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-brand="wolf" data-type="kotly">
+                    <div class="product-card-media">
+                        <span class="product-badge boiler" data-i18n="badge_hybrid">Hybryda</span>
+                        <img src="https://i.imgur.com/wP0lU4u.png" alt="System hybrydowy Hybrid-Plus">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Hybrid-Plus</h3>
+                        <div class="product-price"><span class="price-from" data-i18n="price_from">od</span>32 900 zł</div>
+                        <div class="product-specs">
+                            <span class="product-spec-pill"><span class="dot"></span>Pompa + Kocioł</span>
+                            <span class="product-spec-pill therm"><span class="dot"></span>Auto-przełączanie</span>
+                        </div>
+                        <p>System hybrydowy pompa + kocioł</p>
+                        <div class="card-more">
+                            <p>System hybrydowy łączący pompę ciepła i kocioł gazowy, automatyczne przełączanie, maksymalna efektywność.</p>
+                        </div>
+                        <div class="product-card-foot">
+                            <div class="card-toggle" onclick="toggleCard(this)">
+                                <span class="label" data-i18n="more">Więcej</span>
+                                <span class="chevron"></span>
+                            </div>
+                            <button class="btn btn-aqua" style="width:100%;" data-i18n="contact_btn" onclick="showPage('contact')">Skontaktuj się z nami</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-brand="wolf" data-type="pompy">
+                    <div class="product-card-media">
+                        <span class="product-badge" data-i18n="badge_pump">Pompa ciepła</span>
+                        <img src="https://i.imgur.com/vH3EonO.png" alt="Gruntowa pompa ciepła Geo-Therm Ground">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Geo-Therm Ground</h3>
+                        <div class="product-price"><span class="price-from" data-i18n="price_from">od</span>38 500 zł</div>
+                        <div class="product-specs">
+                            <span class="product-spec-pill"><span class="dot"></span>Gruntowa</span>
+                            <span class="product-spec-pill"><span class="dot"></span>Top COP</span>
+                        </div>
+                        <p>Gruntowa pompa ciepła</p>
+                        <div class="card-more">
+                            <p>Pompa ciepła grzewczo-chłodząca, źródło gruntowe, doskonały COP, najwyższa klasa efektywności.</p>
+                        </div>
+                        <div class="product-card-foot">
+                            <div class="card-toggle" onclick="toggleCard(this)">
+                                <span class="label" data-i18n="more">Więcej</span>
+                                <span class="chevron"></span>
+                            </div>
+                            <button class="btn btn-aqua" style="width:100%;" data-i18n="contact_btn" onclick="showPage('contact')">Skontaktuj się z nami</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-brand="wolf" data-type="kotly">
+                    <div class="product-card-media">
+                        <span class="product-badge boiler" data-i18n="badge_boiler">Kocioł</span>
+                        <img src="https://i.imgur.com/wP0lU4u.png" alt="Kocioł przemysłowy Industrial Max">
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Industrial Max</h3>
+                        <div class="product-price"><span class="price-from" data-i18n="price_from">od</span>54 900 zł</div>
+                        <div class="product-specs">
+                            <span class="product-spec-pill therm"><span class="dot"></span>Modułowy</span>
+                            <span class="product-spec-pill therm"><span class="dot"></span>Kaskada</span>
+                        </div>
+                        <p>Kocioł przemysłowy</p>
+                        <div class="card-more">
+                            <p>Kocioł przemysłowy dla dużych instalacji, modułowa budowa, możliwość kaskady, zaawansowana automatyka.</p>
+                        </div>
+                        <div class="product-card-foot">
+                            <div class="card-toggle" onclick="toggleCard(this)">
+                                <span class="label" data-i18n="more">Więcej</span>
+                                <span class="chevron"></span>
+                            </div>
+                            <button class="btn btn-aqua" style="width:100%;" data-i18n="contact_btn" onclick="showPage('contact')">Skontaktuj się z nami</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE: SERVICE -->
+<div id="service" class="page">
+    <div class="section">
+        <div class="section-header reveal">
+            <h2><span data-i18n="serv_title">Serwis i</span> <span class="accent" data-i18n="serv_accent">Gwarancja</span></h2>
+            <p data-i18n="serv_desc">Zapewniamy kompleksową obsługę serwisową systemów grzewczych – od pierwszego uruchomienia, przez regularne przeglądy, aż po wsparcie pogwarancyjne.</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-item reveal">
+                <h4 data-i18n="serv1_title">🔧 Profesjonalny serwis</h4>
+                <p data-i18n="serv1_desc">Świadczymy autoryzowany serwis urządzeń grzewczych renomowanych producentów. Nasz zespół regularnie uczestniczy w szkoleniach technicznych, dzięki czemu pracujemy zgodnie z aktualnymi normami i wytycznymi.</p>
+            </div>
+            <div class="tech-item reveal">
+                <h4 data-i18n="serv2_title">🛡️ Gwarancja producenta</h4>
+                <p data-i18n="serv2_desc">Prawidłowy montaż i pierwsze uruchomienie wykonane przez certyfikowanych instalatorów są kluczowe dla zachowania gwarancji. Dbamy o kompletność dokumentacji i rejestrację urządzeń.</p>
+            </div>
+            <div class="tech-item reveal">
+                <h4 data-i18n="serv3_title">📅 Przeglądy okresowe</h4>
+                <p data-i18n="serv3_desc">Regularne przeglądy zwiększają żywotność systemu, poprawiają wydajność i minimalizują ryzyko awarii. Oferujemy elastyczne terminy i stałą opiekę serwisową.</p>
+            </div>
+            <div class="tech-item reveal">
+                <h4 data-i18n="serv4_title">🤝 Wsparcie po gwarancji</h4>
+                <p data-i18n="serv4_desc">Po zakończeniu okresu gwarancyjnego nadal zapewniamy pełne wsparcie techniczne, modernizacje oraz rozbudowę istniejących instalacji.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 80px;">
+            <h3 style="font-size: 28px; margin-bottom: 30px;" data-i18n="serv_cta">Masz pytania lub potrzebujesz serwisu?</h3>
+            <button class="btn btn-aqua" onclick="showPage('contact')">Skontaktuj się z nami</button>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE: TECH -->
+<div id="tech" class="page">
+    <section class="tech-section reveal">
+        <div class="section">
+            <div class="tech-header">
+                <h2><span data-i18n="tech_title">Technologie</span> <span class="accent" data-i18n="tech_accent">AquaTherm</span></h2>
+                <div class="title-line"></div>
+                <p data-i18n="tech_desc">Zaawansowane rozwiązania technologiczne, które zapewniają maksymalną wydajność, niezawodność i komfort użytkowania.</p>
+            </div>
+            <div class="tech-grid" style="display:grid; grid-template-columns: repeat(3,1fr); gap:36px;">
+                <div class="tech-box">
+                    <div class="tech-line"></div>
+                    <h3 data-i18n="tech1">Nowoczesna regulacja mocy</h3>
+                    <p data-i18n="tech1d">Dobieramy urządzenia z inwerterową modulacją mocy, aby system pracował płynnie, cicho i oszczędnie.</p>
+                </div>
+                <div class="tech-box">
+                    <div class="tech-line"></div>
+                    <h3 data-i18n="tech2">Zabezpieczenie przeciwzamrożeniowe</h3>
+                    <p data-i18n="tech2d">Projektujemy instalacje odporne na niskie temperatury i bezpieczne w eksploatacji przez cały rok.</p>
+                </div>
+                <div class="tech-box">
+                    <div class="tech-line"></div>
+                    <h3 data-i18n="tech3">Sterowanie zdalne</h3>
+                    <p data-i18n="tech3d">Konfigurujemy systemy umożliwiające sterowanie ogrzewaniem przez aplikację mobilną lub systemy automatyki.</p>
+                </div>
+                <div class="tech-box">
+                    <div class="tech-line"></div>
+                    <h3 data-i18n="tech4">Komfort akustyczny</h3>
+                    <p data-i18n="tech4d">Zwracamy szczególną uwagę na prawidłowy montaż i lokalizację urządzeń, aby ograniczyć hałas do minimum.</p>
+                </div>
+                <div class="tech-box">
+                    <div class="tech-line"></div>
+                    <h3 data-i18n="tech5">Inteligentna automatyka</h3>
+                    <p data-i18n="tech5d">Ustawiamy automatykę, która dostosowuje pracę instalacji do warunków pogodowych i potrzeb użytkowników.</p>
+                </div>
+                <div class="tech-box">
+                    <div class="tech-line"></div>
+                    <h3 data-i18n="tech6">Efektywność i ekologia</h3>
+                    <p data-i18n="tech6d">Stosujemy rozwiązania zgodne z obowiązującymi normami UE, o niskiej emisji i wysokiej sprawności energetycznej.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tech-text-block">
+        <h3><span data-i18n="tech_bottom_title">Technologia, która</span> <span class="accent" data-i18n="tech_bottom_accent">pracuje dla Ciebie</span></h3>
+        <p data-i18n="tech_bottom_desc">W AquaTherm koncentrujemy się na wdrażaniu nowoczesnych systemów grzewczych. Każda realizacja opiera się na analizie technicznej budynku oraz potrzeb użytkownika, aby zastosowane rozwiązanie było efektywne, trwałe i ekonomiczne w eksploatacji.</p>
+    </div>
+
+    <section id="trust">
+        <div class="section">
+            <div class="trust-grid">
+                <div class="trust-item"><span class="trust-number" data-target="15" data-suffix="+">0+</span><p data-i18n="trust1">lat doświadczenia inżynieryjnego</p></div>
+                <div class="trust-item"><span class="trust-number" data-target="2000" data-suffix="+" data-separator=" ">0+</span><p data-i18n="trust2">zainstalowanych systemów</p></div>
+                <div class="trust-item"><span class="trust-number" data-target="98" data-suffix="%">0%</span><p data-i18n="trust3">zadowolonych klientów</p></div>
+                <div class="trust-item"><span class="trust-number" data-target="5" data-prefix="3-">3-0</span><p data-i18n="trust4">lat rozszerzonej gwarancji</p></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- PAGE: CONTACT -->
+<div id="contact" class="page">
+    <div class="section">
+        <div class="contact-container">
+            <div>
+                <h2 style="font-size: 42px; margin-bottom: 30px;"><span data-i18n="contact_title">Porozmawiajmy o</span> <span class="accent" data-i18n="contact_accent">Twoim projekcie</span></h2>
+                <p data-i18n="contact_desc">Nasi doradcy techniczni czekają na Twoje zapytanie. Przygotujemy i pomożemy w doborze urządzenia.</p>
+                <br><br>
+                <div style="font-size: 24px; font-weight: 700;">
+                    <h3><i data-lucide="map-pin"></i> <span data-i18n="contact_office">Biuro Główne</span></h3>
+                    <p><a href="https://maps.google.com/?q=Karola+Miarki+18d,+58-500+Jelenia+Góra,+Polska" target="_blank" style="color: var(--therm); font-weight: 700;">ul. K.Miarki 18d, Jelenia Góra ↗</a></p>
+                    <h3><i data-lucide="phone"></i> <span data-i18n="contact_phone">Telefon</span></h3>
+                    <p>+48 723 654 998</p>
+                    <h3><i data-lucide="mail"></i> <span data-i18n="contact_email">Email</span></h3>
+                    <p>aquatherm.jg.pl@gmail.com</p>
+                </div>
+
+                <div style="margin-top: 40px; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1);">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.8!2d15.7160811!3d50.8946531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ede3fc3100083%3A0x00482fd6d232fe19!2sKarola+Miarki+18d%2C+58-500+Jelenia+G%C3%B3ra!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl"
+                        width="100%"
+                        height="280"
+                        style="border:0; display:block;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Lokalizacja AquaTherm">
+                    </iframe>
+                </div>
+            </div>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <input type="text" name="from_name" data-i18n="form_name" placeholder="Imię i Nazwisko" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="from_email" data-i18n="form_email" placeholder="Adres E-mail" required>
+                </div>
+                <div class="form-group">
+                    <select name="topic" required>
+                        <option value="" data-i18n-option="form_topic">Wybierz temat...</option>
+                        <option data-i18n-option="form_t1">Dobór pompy ciepła</option>
+                        <option data-i18n-option="form_t2">Wymiana kotła gazowego</option>
+                        <option data-i18n-option="form_t3">Serwis / Gwarancja</option>
+                        <option data-i18n-option="form_t4">Współpraca dla instalatorów</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="6" data-i18n="form_msg" placeholder="Opisz swój budynek..." required></textarea>
+                </div>
+                <div id="formMessage" class="form-message"></div>
+                <button type="submit" class="btn btn-aqua" style="width:100%;" data-i18n="form_send">Wyślij Zapytanie</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE: PRIVACY -->
+<div id="privacy" class="page">
+    <div class="section">
+        <div class="section-header reveal">
+            <h2>Polityka <span class="accent">Prywatności</span></h2>
+            <p>Zasady przetwarzania danych osobowych w AquaTherm.</p>
+        </div>
+        <div style="max-width:900px; margin:0 auto; font-size:16px; line-height:1.8; opacity:0.85;">
+            <h3 style="margin-top:30px; font-size:18px;">1. Administrator danych</h3>
+            <p>Administratorem danych osobowych jest AquaTherm, ul. K.Miarki 18d, Jelenia Góra.</p>
+            <h3 style="margin-top:30px; font-size:18px;">2. Zakres i cele przetwarzania</h3>
+            <p>Przetwarzamy dane identyfikacyjne i kontaktowe wyłącznie w celu realizacji zapytań, umów i obsługi serwisowej.</p>
+            <h3 style="margin-top:30px; font-size:18px;">3. Podstawa prawna</h3>
+            <p>Dane przetwarzane są zgodnie z RODO – art. 6 ust. 1. Użytkownik ma prawo dostępu, poprawiania, usunięcia lub ograniczenia przetwarzania danych.</p>
+            <h3 style="margin-top:30px; font-size:18px;">4. Bezpieczeństwo i cookies</h3>
+            <p>Stosujemy środki techniczne i organizacyjne zapewniające ochronę danych. Strona wykorzystuje pliki cookies niezbędne do jej poprawnego działania.</p>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE: 404 -->
+<div id="notfound" class="page">
+    <div class="section notfound-section">
+        <div class="notfound-content reveal">
+            <div class="notfound-code">404</div>
+            <h2 data-i18n="nf_title">Ups! Strona nie istnieje</h2>
+            <p data-i18n="nf_desc">Wygląda na to, że strona, którą szukasz, nie istnieje lub została przeniesiona.</p>
+            <div style="display:flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+                <button class="btn btn-aqua" onclick="navTo('home')" data-i18n="nf_home">Wróć na stronę główną</button>
+                <button class="btn btn-outline-dark" onclick="navTo('contact')" data-i18n="nf_contact">Skontaktuj się z nami</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <img src="logo-footer.png" alt="AquaTherm" class="footer-logo footer-logo-clean">
+            <p data-i18n="footer_desc">AquaTherm – profesjonalny montaż i serwis systemów grzewczych. Stawiamy na jakość i długofalową współpracę.</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/aquatherm18?igsh=MnhwZzg0c2FkeG1t" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/173ym5Axi2/" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/48723654998" target="_blank" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h5 data-i18n="footer_client">Dla Klienta</h5>
+            <ul>
+                <li><a href="javascript:void(0)" data-i18n="exp1" onclick="showPage('products'); filterByType('pompy')">Pompy Ciepła</a></li>
+                <li><a href="javascript:void(0)" data-i18n="exp2" onclick="showPage('products'); filterByType('kotly')">Kotły Gazowe</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5 data-i18n="footer_support">Wsparcie</h5>
+            <ul>
+                <li><a href="https://www.wolf.eu/pl-pl/serwis/downloady" target="_blank" data-i18n="footer_docs">Dokumentacja techniczna (WOLF)</a></li>
+                <li data-i18n="footer_installer" onclick="showPage('contact')">Znajdź instalatora</li>
+                <li data-i18n="footer_report" onclick="showPage('contact')">Zgłoś usterkę</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5 data-i18n="footer_company">Firma</h5>
+            <ul>
+                <li data-i18n="footer_contact" onclick="showPage('contact')">Kontakt</li>
+                <li><a data-i18n="footer_privacy" onclick="showPage('privacy')">Polityka Prywatności</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; display: flex; justify-content: space-between; font-size: 13px; opacity: 0.5;">
+        <p>&copy; 2026 AquaTherm Polska Sp. z o.o. Wszystkie prawa zastrzeżone.</p>
+        <p>Made by ProEngine | Technika Grzewcza</p>
+    </div>
+</footer>
+
+<script>
+    // ==================== TRANSLATIONS ====================
+    const translations = {
+        pl: {
+            nav_home: "Start", nav_products: "Systemy Grzewcze", nav_tech: "Technologia", nav_contact: "Kontakt", serv_title_short: "Serwis",
+            hero_title: "Profesjonalne Systemy Grzewcze",
+            hero_sub: "Montaż, uruchomienie, serwis i opieka techniczna systemów grzewczych realizowane przez doświadczonych instalatorów.",
+            hero_btn1: "Przeglądaj Systemy", hero_btn2: "O Naszej Technologii",
+            sol1_title: "Modernizacja — Dom", sol1_desc: "Wymień przestarzały system na efektywne rozwiązanie.",
+            sol2_title: "Nowy Budynek", sol2_desc: "Dobór i montaż systemów dopasowanych do projektu.",
+            sol3_title: "Serwis i Gwarancja", sol3_desc: "Opieka techniczna, przeglądy i pełne wsparcie po montażu.",
+            partners_title: "Nasi", partners_accent: "Partnerzy",
+            partners_desc: "Współpracujemy wyłącznie z renomowanymi producentami systemów grzewczych.",
+            offer_title: "Co", offer_accent: "Oferujemy",
+            offer_desc: "Kompleksowa obsługa systemów grzewczych – od doboru po serwis.",
+            offer1_title: "Doradztwo i dobór systemu", offer1_desc: "Pomagamy dobrać optymalne rozwiązanie dopasowane do budynku i potrzeb użytkownika.",
+            offer2_title: "Montaż i uruchomienie", offer2_desc: "Profesjonalny montaż zgodny z wytycznymi producentów.",
+            offer3_title: "Serwis i opieka techniczna", offer3_desc: "Wsparcie gwarancyjne i pogwarancyjne, przeglądy oraz serwis.",
+            exp_title: "Nasze Obszary", exp_accent: "Eksperckie",
+            exp_desc: "Skupiamy się na tym, co robimy najlepiej.",
+            exp1: "Pompy Ciepła", exp2: "Kotły Gazowe", see_models: "ZOBACZ MODELE →",
+            why_title: "Dlaczego Warto Wybrać", why_accent: "AquaTherm?",
+            why1_title: "Doświadczenie i precyzja wykonania", why1_desc: "Realizujemy instalacje z dbałością o komfort i poprawną pracę urządzeń, zgodnie z zaleceniami producentów.",
+            why2_title: "Nowoczesne systemy sterowania", why2_desc: "Wykonujemy instalacje przygotowane do integracji z systemami smart home.",
+            why3_title: "Wsparcie serwisowe i gwarancyjne", why3_desc: "Zapewniamy poprawny montaż, dokumentację oraz wsparcie w zakresie przeglądów i serwisu.",
+            reviews_title: "Opinie", reviews_accent: "Naszych Klientów",
+            reviews_desc: "Zaufali nam mieszkańcy Jeleniej Góry i okolic. Sprawdź, co mówią o naszych usługach.",
+            review1_text: "Profesjonalny montaż pompy ciepła, ekipa pracowała sprawnie i czysto. Doradcy pomogli wybrać odpowiedni model do naszego domu. Polecam!",
+            review1_name: "Marek K.", review1_loc: "Jelenia Góra",
+            review2_text: "Wymiana starego kotła na nowy kondensacyjny przebiegła bez problemów. Szybka realizacja, uczciwa cena i pełna dokumentacja gwarancyjna.",
+            review2_name: "Anna W.", review2_loc: "Karpacz",
+            review3_text: "Korzystam z serwisu AquaTherm od kilku lat. Przeglądy zawsze na czas, a ekipa odpowiada szybko na każde pytanie. Bardzo solidna firma.",
+            review3_name: "Tomasz N.", review3_loc: "Szklarska Poręba",
+            prod_title: "Systemy", prod_accent: "Grzewcze",
+            prod_desc: "Nowoczesne pompy ciepła i kotły zaprojektowane z myślą o maksymalnej efektywności i komforcie użytkowania.",
+            prod_search: "Szukaj systemu (np. Pro-Air, Gas-Core...)",
+            filter_all: "Wszystkie", filter_pumps: "Pompy ciepła", filter_boilers: "Kotły",
+            badge_pump: "Pompa ciepła", badge_boiler: "Kocioł", badge_hybrid: "Hybryda", price_from: "od",
+            contact_btn: "Skontaktuj się z nami", more: "Więcej", less: "Zwiń",
+            serv_title: "Serwis i", serv_accent: "Gwarancja",
+            serv_desc: "Zapewniamy kompleksową obsługę serwisową systemów grzewczych.",
+            serv1_title: "🔧 Profesjonalny serwis", serv1_desc: "Świadczymy autoryzowany serwis urządzeń grzewczych renomowanych producentów.",
+            serv2_title: "🛡️ Gwarancja producenta", serv2_desc: "Prawidłowy montaż i pierwsze uruchomienie są kluczowe dla zachowania gwarancji.",
+            serv3_title: "📅 Przeglądy okresowe", serv3_desc: "Regularne przeglądy zwiększają żywotność systemu i minimalizują ryzyko awarii.",
+            serv4_title: "🤝 Wsparcie po gwarancji", serv4_desc: "Po zakończeniu okresu gwarancyjnego nadal zapewniamy pełne wsparcie techniczne.",
+            serv_cta: "Masz pytania lub potrzebujesz serwisu?",
+            tech_title: "Technologie", tech_accent: "AquaTherm",
+            tech_desc: "Zaawansowane rozwiązania technologiczne, które zapewniają maksymalną wydajność i komfort użytkowania.",
+            tech1: "Nowoczesna regulacja mocy", tech1d: "Dobieramy urządzenia z inwerterową modulacją mocy, aby system pracował płynnie, cicho i oszczędnie.",
+            tech2: "Zabezpieczenie przeciwzamrożeniowe", tech2d: "Projektujemy instalacje odporne na niskie temperatury przez cały rok.",
+            tech3: "Sterowanie zdalne", tech3d: "Konfigurujemy systemy umożliwiające sterowanie ogrzewaniem przez aplikację mobilną.",
+            tech4: "Komfort akustyczny", tech4d: "Zwracamy szczególną uwagę na prawidłowy montaż, aby ograniczyć hałas do minimum.",
+            tech5: "Inteligentna automatyka", tech5d: "Ustawiamy automatykę, która dostosowuje pracę instalacji do warunków pogodowych.",
+            tech6: "Efektywność i ekologia", tech6d: "Stosujemy rozwiązania zgodne z obowiązującymi normami UE.",
+            tech_bottom_title: "Technologia, która", tech_bottom_accent: "pracuje dla Ciebie",
+            tech_bottom_desc: "W AquaTherm koncentrujemy się na wdrażaniu nowoczesnych systemów grzewczych. Każda realizacja opiera się na analizie technicznej budynku oraz potrzeb użytkownika.",
+            trust1: "lat doświadczenia inżynieryjnego", trust2: "zainstalowanych systemów", trust3: "zadowolonych klientów", trust4: "lat rozszerzonej gwarancji",
+            contact_title: "Porozmawiajmy o", contact_accent: "Twoim projekcie",
+            contact_desc: "Nasi doradcy techniczni czekają na Twoje zapytanie.",
+            contact_office: "Biuro Główne", contact_phone: "Telefon", contact_email: "Email",
+            form_name: "Imię i Nazwisko", form_email: "Adres E-mail", form_topic: "Wybierz temat...",
+            form_t1: "Dobór pompy ciepła", form_t2: "Wymiana kotła gazowego", form_t3: "Serwis / Gwarancja", form_t4: "Współpraca dla instalatorów",
+            form_msg: "Opisz swój budynek...", form_send: "Wyślij Zapytanie",
+            form_err_email: "Podaj poprawny adres e-mail.", form_err_msg: "Wiadomość musi mieć minimum 10 znaków.",
+            form_sending: "Wysyłanie wiadomości...", form_success: "Wiadomość została wysłana. Dziękujemy za kontakt!", form_error: "Wystąpił błąd. Spróbuj ponownie później.",
+            footer_desc: "AquaTherm – profesjonalny montaż i serwis systemów grzewczych.",
+            footer_client: "Dla Klienta", footer_support: "Wsparcie", footer_company: "Firma",
+            footer_docs: "Dokumentacja techniczna (WOLF)", footer_installer: "Znajdź instalatora", footer_report: "Zgłoś usterkę",
+            footer_contact: "Kontakt", footer_privacy: "Polityka Prywatności",
+            cookie_title: "Ta strona używa plików cookies",
+            cookie_desc: "Używamy cookies, aby zapewnić poprawne działanie strony i analizować ruch. Możesz zaakceptować wszystkie lub tylko niezbędne.",
+            cookie_accept: "Akceptuję wszystkie", cookie_reject: "Tylko niezbędne",
+            nf_title: "Ups! Strona nie istnieje", nf_desc: "Wygląda na to, że strona, którą szukasz, nie istnieje lub została przeniesiona.",
+            nf_home: "Wróć na stronę główną", nf_contact: "Skontaktuj się z nami",
+            loading: "Ładowanie...",
+        },
+        en: {
+            nav_home: "Home", nav_products: "Heating Systems", nav_tech: "Technology", nav_contact: "Contact", serv_title_short: "Service",
+            hero_title: "Professional Heating Systems",
+            hero_sub: "Installation, commissioning, service and technical care of heating systems by experienced installers.",
+            hero_btn1: "Browse Systems", hero_btn2: "Our Technology",
+            sol1_title: "Home Modernisation", sol1_desc: "Replace your old system with an efficient solution.",
+            sol2_title: "New Building", sol2_desc: "Selection and installation of systems tailored to the project.",
+            sol3_title: "Service & Warranty", sol3_desc: "Technical care, inspections and full support after installation.",
+            partners_title: "Our", partners_accent: "Partners",
+            partners_desc: "We work exclusively with renowned heating system manufacturers.",
+            offer_title: "What We", offer_accent: "Offer",
+            offer_desc: "Comprehensive heating system service – from selection to maintenance.",
+            offer1_title: "Consulting & System Selection", offer1_desc: "We help choose the optimal solution tailored to the building and user needs.",
+            offer2_title: "Installation & Commissioning", offer2_desc: "Professional installation in accordance with manufacturer guidelines.",
+            offer3_title: "Service & Technical Care", offer3_desc: "Warranty and post-warranty support, inspections and servicing.",
+            exp_title: "Our Areas of", exp_accent: "Expertise",
+            exp_desc: "We focus on what we do best.",
+            exp1: "Heat Pumps", exp2: "Gas Boilers", see_models: "SEE MODELS →",
+            why_title: "Why Choose", why_accent: "AquaTherm?",
+            why1_title: "Experience & Precision", why1_desc: "We carry out installations with care for comfort and correct operation of devices, in accordance with manufacturer recommendations.",
+            why2_title: "Modern Control Systems", why2_desc: "We install systems ready for integration with smart home automation.",
+            why3_title: "Service & Warranty Support", why3_desc: "We ensure correct installation, documentation and support for inspections and servicing.",
+            reviews_title: "Reviews", reviews_accent: "From Our Clients",
+            reviews_desc: "Trusted by residents of Jelenia Góra and the surrounding area. See what they say about our services.",
+            review1_text: "Professional heat pump installation, the team worked efficiently and cleanly. The advisors helped us choose the right model for our home. Highly recommended!",
+            review1_name: "Marek K.", review1_loc: "Jelenia Góra",
+            review2_text: "Replacing the old boiler with a new condensing one went smoothly. Quick turnaround, fair price and full warranty documentation.",
+            review2_name: "Anna W.", review2_loc: "Karpacz",
+            review3_text: "I've been using AquaTherm's service for several years. Inspections are always on time and the team responds quickly to every question. A very reliable company.",
+            review3_name: "Tomasz N.", review3_loc: "Szklarska Poręba",
+            prod_title: "Heating", prod_accent: "Systems",
+            prod_desc: "Modern heat pumps and boilers designed for maximum efficiency and comfort.",
+            prod_search: "Search system (e.g. Pro-Air, Gas-Core...)",
+            filter_all: "All", filter_pumps: "Heat pumps", filter_boilers: "Boilers",
+            badge_pump: "Heat pump", badge_boiler: "Boiler", badge_hybrid: "Hybrid", price_from: "from",
+            contact_btn: "Contact us", more: "More", less: "Less",
+            serv_title: "Service &", serv_accent: "Warranty",
+            serv_desc: "We provide comprehensive service for heating systems.",
+            serv1_title: "🔧 Professional Service", serv1_desc: "We provide authorised service for heating devices from renowned manufacturers.",
+            serv2_title: "🛡️ Manufacturer Warranty", serv2_desc: "Correct installation and commissioning are key to maintaining the warranty.",
+            serv3_title: "📅 Regular Inspections", serv3_desc: "Regular inspections extend system life and minimise the risk of failure.",
+            serv4_title: "🤝 Post-Warranty Support", serv4_desc: "After the warranty period we still provide full technical support.",
+            serv_cta: "Have questions or need service?",
+            tech_title: "AquaTherm", tech_accent: "Technology",
+            tech_desc: "Advanced technological solutions ensuring maximum efficiency, reliability and user comfort.",
+            tech1: "Modern Power Regulation", tech1d: "We select inverter-modulated devices so the system runs smoothly, quietly and economically.",
+            tech2: "Anti-Freeze Protection", tech2d: "We design installations resistant to low temperatures, safe year-round.",
+            tech3: "Remote Control", tech3d: "We configure systems allowing heating control via mobile app or automation.",
+            tech4: "Acoustic Comfort", tech4d: "We pay special attention to correct installation to minimise noise.",
+            tech5: "Smart Automation", tech5d: "We set up automation that adapts the installation to weather conditions.",
+            tech6: "Efficiency & Ecology", tech6d: "We apply solutions compliant with current EU standards.",
+            tech_bottom_title: "Technology that", tech_bottom_accent: "works for you",
+            tech_bottom_desc: "At AquaTherm we focus on implementing modern heating systems. Every project is based on technical analysis of the building and user needs.",
+            trust1: "years of engineering experience", trust2: "installed systems", trust3: "satisfied customers", trust4: "years extended warranty",
+            contact_title: "Let's talk about", contact_accent: "your project",
+            contact_desc: "Our technical advisors are waiting for your enquiry.",
+            contact_office: "Main Office", contact_phone: "Phone", contact_email: "Email",
+            form_name: "Full Name", form_email: "Email Address", form_topic: "Choose topic...",
+            form_t1: "Heat pump selection", form_t2: "Gas boiler replacement", form_t3: "Service / Warranty", form_t4: "Installer cooperation",
+            form_msg: "Describe your building...", form_send: "Send Enquiry",
+            form_err_email: "Please enter a valid email address.", form_err_msg: "Message must be at least 10 characters long.",
+            form_sending: "Sending message...", form_success: "Your message has been sent. Thank you for contacting us!", form_error: "An error occurred. Please try again later.",
+            footer_desc: "AquaTherm – professional installation and service of heating systems.",
+            footer_client: "For Client", footer_support: "Support", footer_company: "Company",
+            footer_docs: "Technical Documentation (WOLF)", footer_installer: "Find installer", footer_report: "Report fault",
+            footer_contact: "Contact", footer_privacy: "Privacy Policy",
+            cookie_title: "This site uses cookies",
+            cookie_desc: "We use cookies to ensure the site works correctly and to analyse traffic. You can accept all or only necessary cookies.",
+            cookie_accept: "Accept all", cookie_reject: "Necessary only",
+            nf_title: "Oops! Page not found", nf_desc: "It looks like the page you're looking for doesn't exist or has been moved.",
+            nf_home: "Back to homepage", nf_contact: "Contact us",
+            loading: "Loading...",
+        },
+        ua: {
+            nav_home: "Головна", nav_products: "Системи опалення", nav_tech: "Технологія", nav_contact: "Контакт", serv_title_short: "Сервіс",
+            hero_title: "Професійні Системи Опалення",
+            hero_sub: "Монтаж, запуск, сервіс та технічне обслуговування систем опалення від досвідчених монтажників.",
+            hero_btn1: "Переглянути системи", hero_btn2: "Наша технологія",
+            sol1_title: "Модернізація — Дім", sol1_desc: "Замініть застарілу систему на ефективне рішення.",
+            sol2_title: "Нова Будівля", sol2_desc: "Підбір та монтаж систем, адаптованих до проекту.",
+            sol3_title: "Сервіс і Гарантія", sol3_desc: "Технічне обслуговування, огляди та повна підтримка після монтажу.",
+            partners_title: "Наші", partners_accent: "Партнери",
+            partners_desc: "Ми працюємо виключно з відомими виробниками систем опалення.",
+            offer_title: "Що ми", offer_accent: "Пропонуємо",
+            offer_desc: "Комплексне обслуговування систем опалення – від підбору до сервісу.",
+            offer1_title: "Консультація та підбір системи", offer1_desc: "Допомагаємо підібрати оптимальне рішення для будівлі та потреб користувача.",
+            offer2_title: "Монтаж та запуск", offer2_desc: "Професійний монтаж відповідно до рекомендацій виробників.",
+            offer3_title: "Сервіс та технічна підтримка", offer3_desc: "Гарантійна та постгарантійна підтримка, огляди та сервіс.",
+            exp_title: "Наші Галузі", exp_accent: "Експертизи",
+            exp_desc: "Зосереджуємось на тому, що робимо найкраще.",
+            exp1: "Теплові насоси", exp2: "Газові котли", see_models: "ДИВИТИСЯ МОДЕЛІ →",
+            why_title: "Чому варто обрати", why_accent: "AquaTherm?",
+            why1_title: "Досвід та точність виконання", why1_desc: "Реалізуємо монтаж з дбайливістю до комфорту та правильної роботи обладнання.",
+            why2_title: "Сучасні системи керування", why2_desc: "Встановлюємо системи, готові до інтеграції з розумним будинком.",
+            why3_title: "Сервісна та гарантійна підтримка", why3_desc: "Забезпечуємо правильний монтаж, документацію та підтримку сервісу.",
+            reviews_title: "Відгуки", reviews_accent: "Наших Клієнтів",
+            reviews_desc: "Нам довіряють жителі Єленя-Гури та околиць. Дізнайтеся, що вони кажуть про наші послуги.",
+            review1_text: "Професійний монтаж теплового насоса, команда працювала швидко та чисто. Консультанти допомогли обрати правильну модель для нашого будинку. Рекомендую!",
+            review1_name: "Марек К.", review1_loc: "Єлена-Гура",
+            review2_text: "Заміна старого котла на новий конденсаційний пройшла без проблем. Швидке виконання, чесна ціна та повна гарантійна документація.",
+            review2_name: "Анна В.", review2_loc: "Карпач",
+            review3_text: "Користуюся сервісом AquaTherm уже кілька років. Огляди завжди вчасно, а команда швидко відповідає на будь-які питання. Дуже надійна компанія.",
+            review3_name: "Томаш Н.", review3_loc: "Шклярська Поремба",
+            prod_title: "Системи", prod_accent: "Опалення",
+            prod_desc: "Сучасні теплові насоси та котли, розроблені для максимальної ефективності та комфорту.",
+            prod_search: "Шукати систему (напр. Pro-Air, Gas-Core...)",
+            filter_all: "Всі", filter_pumps: "Теплові насоси", filter_boilers: "Котли",
+            badge_pump: "Тепловий насос", badge_boiler: "Котел", badge_hybrid: "Гібрид", price_from: "від",
+            contact_btn: "Зв'яжіться з нами", more: "Більше", less: "Згорнути",
+            serv_title: "Сервіс і", serv_accent: "Гарантія",
+            serv_desc: "Забезпечуємо комплексне сервісне обслуговування систем опалення.",
+            serv1_title: "🔧 Професійний сервіс", serv1_desc: "Надаємо авторизований сервіс опалювального обладнання відомих виробників.",
+            serv2_title: "🛡️ Гарантія виробника", serv2_desc: "Правильний монтаж і перший запуск є ключовими для збереження гарантії.",
+            serv3_title: "📅 Періодичні огляди", serv3_desc: "Регулярні огляди збільшують довговічність системи та мінімізують ризик аварій.",
+            serv4_title: "🤝 Підтримка після гарантії", serv4_desc: "Після закінчення гарантійного терміну надаємо повну технічну підтримку.",
+            serv_cta: "Маєте запитання або потребуєте сервісу?",
+            tech_title: "Технології", tech_accent: "AquaTherm",
+            tech_desc: "Передові технологічні рішення для максимальної ефективності та комфорту.",
+            tech1: "Сучасне регулювання потужності", tech1d: "Підбираємо пристрої з інверторною модуляцією потужності для плавної та економічної роботи.",
+            tech2: "Захист від заморожування", tech2d: "Проектуємо установки, стійкі до низьких температур, безпечні цілий рік.",
+            tech3: "Дистанційне керування", tech3d: "Налаштовуємо системи керування опаленням через мобільний додаток.",
+            tech4: "Акустичний комфорт", tech4d: "Приділяємо особливу увагу правильному монтажу для мінімізації шуму.",
+            tech5: "Інтелектуальна автоматика", tech5d: "Налаштовуємо автоматику, що адаптує роботу системи до погодних умов.",
+            tech6: "Ефективність та екологія", tech6d: "Застосовуємо рішення відповідно до чинних норм ЄС.",
+            tech_bottom_title: "Технологія, що", tech_bottom_accent: "працює для вас",
+            tech_bottom_desc: "В AquaTherm ми зосереджені на впровадженні сучасних систем опалення. Кожна реалізація базується на технічному аналізі будівлі та потреб користувача.",
+            trust1: "років інженерного досвіду", trust2: "встановлених систем", trust3: "задоволених клієнтів", trust4: "років розширеної гарантії",
+            contact_title: "Поговоримо про", contact_accent: "ваш проект",
+            contact_desc: "Наші технічні консультанти чекають на ваш запит.",
+            contact_office: "Головний офіс", contact_phone: "Телефон", contact_email: "Ел. пошта",
+            form_name: "Ім'я та прізвище", form_email: "Електронна пошта", form_topic: "Оберіть тему...",
+            form_t1: "Підбір теплового насоса", form_t2: "Заміна газового котла", form_t3: "Сервіс / Гарантія", form_t4: "Співпраця для монтажників",
+            form_msg: "Опишіть вашу будівлю...", form_send: "Надіслати запит",
+            form_err_email: "Введіть правильну електронну адресу.", form_err_msg: "Повідомлення повинно містити щонайменше 10 символів.",
+            form_sending: "Надсилання повідомлення...", form_success: "Повідомлення надіслано. Дякуємо за звернення!", form_error: "Сталася помилка. Спробуйте пізніше.",
+            footer_desc: "AquaTherm – професійний монтаж і сервіс систем опалення.",
+            footer_client: "Клієнтам", footer_support: "Підтримка", footer_company: "Компанія",
+            footer_docs: "Технічна документація (WOLF)", footer_installer: "Знайти монтажника", footer_report: "Повідомити про несправність",
+            footer_contact: "Контакт", footer_privacy: "Політика конфіденційності",
+            cookie_title: "Цей сайт використовує файли cookie",
+            cookie_desc: "Ми використовуємо файли cookie для забезпечення роботи сайту та аналізу трафіку.",
+            cookie_accept: "Прийняти всі", cookie_reject: "Тільки необхідні",
+            nf_title: "Ой! Сторінку не знайдено", nf_desc: "Здається, сторінка, яку ви шукаєте, не існує або була переміщена.",
+            nf_home: "На головну сторінку", nf_contact: "Зв'язатися з нами",
+            loading: "Завантаження...",
+        }
+    };
+
+    let currentLang = 'pl';
+
+    function t(key) {
+        return translations[currentLang][key] || translations['pl'][key] || key;
+    }
+
+    function applyTranslations() {
+        const T = translations[currentLang];
+        // Nav
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (T[key]) {
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = T[key];
+                } else {
+                    el.textContent = T[key];
+                }
+            }
+        });
+        // Select options
+        document.querySelectorAll('[data-i18n-option]').forEach(el => {
+            const key = el.getAttribute('data-i18n-option');
+            if (T[key]) el.textContent = T[key];
+        });
+        // html lang
+        document.documentElement.lang = currentLang === 'ua' ? 'uk' : currentLang;
+    }
+
+    function toggleLangMenu() {
+        const switcher = document.getElementById('langSwitcher');
+        switcher.classList.toggle('open');
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        const flags = { pl: '🇵🇱', en: '🇬🇧', ua: '🇺🇦' };
+        const labels = { pl: 'PL', en: 'EN', ua: 'UA' };
+        document.getElementById('currentFlag').textContent = flags[lang];
+        document.getElementById('currentLang').textContent = labels[lang];
+        // Update active option
+        document.querySelectorAll('.lang-option').forEach(opt => {
+            opt.classList.toggle('active', opt.getAttribute('onclick').includes("'"+lang+"'"));
+        });
+        document.getElementById('langSwitcher').classList.remove('open');
+        applyTranslations();
+        localStorage.setItem('preferred_lang', lang);
+    }
+
+    // Close lang dropdown on outside click
+    document.addEventListener('click', (e) => {
+        const switcher = document.getElementById('langSwitcher');
+        if (switcher && !switcher.contains(e.target)) {
+            switcher.classList.remove('open');
+        }
+    });
+
+    // PAGE ENGINE
+    const validPages = ['home', 'products', 'service', 'tech', 'contact', 'privacy', 'notfound'];
+
+    function showPage(pageId) {
+        const target = validPages.includes(pageId) ? pageId : 'notfound';
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById(target).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (target !== 'notfound') {
+            history.replaceState(null, '', '#' + target);
+        }
+    }
+
+    // Check URL hash on load - show 404 if it doesn't match a known page
+    (function routeFromHash() {
+        const hash = window.location.hash.replace('#', '');
+        if (hash && hash.length > 0) {
+            showPage(hash);
+        } else {
+            showPage('home');
+        }
+    })();
+
+    // RESTORE SAVED LANGUAGE
+    (function initLang() {
+        const saved = localStorage.getItem('preferred_lang');
+        if (saved && ['pl','en','ua'].includes(saved)) {
+            setLang(saved);
+        }
+    })();
+
+    // MOBILE MENU
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const hamburger = document.getElementById('hamburger');
+        const isOpen = menu.classList.contains('open');
+        if (isOpen) {
+            closeMobileMenu();
+        } else {
+            menu.style.display = 'block';
+            requestAnimationFrame(() => menu.classList.add('open'));
+            hamburger.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const hamburger = document.getElementById('hamburger');
+        menu.classList.remove('open');
+        hamburger.classList.remove('open');
+        document.body.style.overflow = '';
+        setTimeout(() => { menu.style.display = 'none'; }, 400);
+    }
+
+    function closeMobileMenuOnOverlay(e) {
+        if (e.target === document.getElementById('mobileMenu')) closeMobileMenu();
+    }
+
+    function navTo(pageId) {
+        closeMobileMenu();
+        setTimeout(() => {
+            showPage(pageId);
+            if (pageId === 'products') resetProductsPage();
+        }, 300);
+    }
+
+    // STICKY HEADER
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        header.style.padding = window.scrollY > 50 ? '5px 0' : '0';
+    });
+
+    // SCROLL REVEAL
+    function revealOnScroll() {
+        document.querySelectorAll('.reveal').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+                el.classList.add('active');
+            }
+        });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // CARD TOGGLE
+    function toggleCard(trigger) {
+        const card = trigger.closest('.product-card');
+        const more = card.querySelector('.card-more');
+        more.classList.toggle('open');
+        trigger.classList.toggle('open');
+        trigger.querySelector('.label').textContent = more.classList.contains('open') ? 'Zwiń' : 'Więcej';
+    }
+
+    // FILTER BY TYPE
+    let activeType = 'all';
+    function filterByType(type) {
+        activeType = type;
+        document.querySelectorAll('#products .product-card').forEach(item => {
+            item.style.display = (type === 'all' || item.dataset.type === type) ? 'block' : 'none';
+        });
+    }
+
+    // FILTER BY BRAND
+    function filterByBrand(brand) {
+        showPage('products');
+        setTimeout(() => {
+            document.querySelectorAll('#products .product-card').forEach(card => {
+                card.style.display = card.dataset.brand === brand ? 'block' : 'none';
+            });
+        }, 50);
+    }
+
+    // SEARCH
+    function searchProducts(query) {
+        const resultsBox = document.getElementById('searchResults');
+        const cards = document.querySelectorAll('#products .product-card');
+        query = query.toLowerCase().trim();
+        resultsBox.innerHTML = '';
+
+        if (!query) {
+            cards.forEach(card => { card.classList.remove('is-hidden'); });
+            resultsBox.style.display = 'none';
+            return;
+        }
+
+        let matchesCount = 0;
+        cards.forEach(card => {
+            const title = card.querySelector('h3').innerText.toLowerCase();
+            if (title.includes(query)) {
+                matchesCount++;
+                card.classList.remove('is-hidden');
+                const div = document.createElement('div');
+                div.className = 'search-item';
+                div.innerText = card.querySelector('h3').innerText;
+                div.onclick = () => {
+                    document.getElementById('productSearch').value = div.innerText;
+                    searchProducts(div.innerText);
+                    resultsBox.style.display = 'none';
+                };
+                resultsBox.appendChild(div);
+            } else {
+                card.classList.add('is-hidden');
+            }
+        });
+
+        resultsBox.style.display = matchesCount ? 'block' : 'none';
+    }
+
+    // RESET PRODUCTS
+    function resetProductsPage() {
+        activeType = 'all';
+        const searchInput = document.getElementById('productSearch');
+        const resultsBox = document.getElementById('searchResults');
+        if (searchInput) searchInput.value = '';
+        if (resultsBox) { resultsBox.innerHTML = ''; resultsBox.style.display = 'none'; }
+        document.querySelectorAll('#products .product-card').forEach(card => {
+            card.classList.remove('is-hidden');
+            card.style.display = 'block';
+        });
+        document.querySelector('#products .systems-title')?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // CONTACT FORM (EmailJS)
+    emailjs.init({ publicKey: "vrpnaxy6nhfDH746J" });
+
+    const form = document.getElementById('contactForm');
+    const messageBox = document.getElementById('formMessage');
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const t = translations[currentLang];
+        const formData = new FormData(form);
+        const email = formData.get('from_email')?.trim();
+        const text = formData.get('message')?.trim();
+
+        messageBox.style.display = 'block';
+        if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+            messageBox.style.color = '#c0392b';
+            messageBox.innerText = t.form_err_email;
+            return;
+        }
+        if (!text || text.length < 10) {
+            messageBox.style.color = '#c0392b';
+            messageBox.innerText = t.form_err_msg;
+            return;
+        }
+
+        messageBox.style.color = '#2980b9';
+        messageBox.innerText = t.form_sending;
+
+        try {
+            await emailjs.sendForm('service_1t8jdr6', 'template_viey8fo', form);
+            messageBox.style.color = 'green';
+            messageBox.innerText = t.form_success;
+            form.reset();
+        } catch {
+            messageBox.style.color = '#c0392b';
+            messageBox.innerText = t.form_error;
+        }
+    });
+
+    lucide.createIcons();
+
+    // COOKIE BANNER
+    function initCookieBanner() {
+        if (localStorage.getItem('cookies_accepted')) return;
+        const banner = document.getElementById('cookieBanner');
+        setTimeout(() => banner.classList.add('show'), 800);
+    }
+    function acceptCookies() {
+        localStorage.setItem('cookies_accepted', 'all');
+        hideCookieBanner();
+    }
+    function rejectCookies() {
+        localStorage.setItem('cookies_accepted', 'necessary');
+        hideCookieBanner();
+    }
+    function hideCookieBanner() {
+        const banner = document.getElementById('cookieBanner');
+        banner.classList.remove('show');
+        banner.classList.add('hide');
+        setTimeout(() => banner.remove(), 500);
+    }
+    window.addEventListener('load', initCookieBanner);
+</script>
+
+<!-- COOKIE BANNER -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-label="Polityka cookies">
+    <div class="cookie-inner">
+        <div class="cookie-icon">🍪</div>
+        <div class="cookie-text">
+            <strong data-i18n="cookie_title">Ta strona używa plików cookies</strong>
+            <p><span data-i18n="cookie_desc">Używamy cookies, aby zapewnić poprawne działanie strony i analizować ruch. Możesz zaakceptować wszystkie lub tylko niezbędne.</span> <a onclick="rejectCookies(); showPage('privacy')" data-i18n="footer_privacy" style="color: var(--therm); font-weight: 700; cursor: pointer; text-decoration: underline;">Polityka prywatności</a></p>
+        </div>
+        <div class="cookie-actions">
+            <button class="cookie-btn cookie-btn-reject" data-i18n="cookie_reject" onclick="rejectCookies()">Tylko niezbędne</button>
+            <button class="cookie-btn cookie-btn-accept" data-i18n="cookie_accept" onclick="acceptCookies()">Akceptuję wszystkie</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .cookie-banner {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%) translateY(120px);
+        z-index: 99999;
+        width: min(780px, calc(100vw - 32px));
+        background: var(--white);
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
+        opacity: 0;
+        transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.5s ease;
+        pointer-events: none;
+    }
+    .cookie-banner.show {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .cookie-banner.hide {
+        transform: translateX(-50%) translateY(140px);
+        opacity: 0;
+        pointer-events: none;
+    }
+    .cookie-inner {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 24px 28px;
+    }
+    .cookie-icon { font-size: 36px; flex-shrink: 0; }
+    .cookie-text { flex: 1; }
+    .cookie-text strong { display: block; font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 5px; }
+    .cookie-text p { font-size: 13px; color: var(--text-light); line-height: 1.5; margin: 0; }
+    .cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
+    .cookie-btn { padding: 12px 20px; border-radius: 12px; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer; border: none; white-space: nowrap; transition: all 0.3s ease; }
+    .cookie-btn-reject { background: #f0f2f5; color: var(--navy); }
+    .cookie-btn-reject:hover { background: #e2e6ea; transform: translateY(-2px); }
+    .cookie-btn-accept { background: var(--therm); color: white; }
+    .cookie-btn-accept:hover { background: var(--aqua); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(111,183,214,0.4); }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; padding: 22px 20px; }
+        .cookie-actions { width: 100%; flex-direction: column; }
+        .cookie-btn { width: 100%; padding: 14px; }
+    }
+</style>
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp-btn" href="https://wa.me/48723654998?text=Dzień%20dobry%2C%20chciałbym%20zapytać%20o%20systemy%20grzewcze." target="_blank" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Wróć na górę">
+    ↑
+</button>
+
+<script>
+    // SCROLL TO TOP VISIBILITY
+    window.addEventListener('scroll', () => {
+        const btn = document.getElementById('scrollTop');
+        if (window.scrollY > 400) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    });
+
+    // PAGE LOADER
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('loaderOverlay');
+        setTimeout(() => {
+            loader.classList.add('hide');
+            setTimeout(() => loader.remove(), 650);
+        }, 1400);
+    });
+
+    // COUNTER ANIMATION
+    function animateCounters() {
+        const counters = document.querySelectorAll('.trust-number[data-target]');
+        counters.forEach(counter => {
+            if (counter.dataset.animated) return;
+            const rect = counter.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 50) {
+                counter.dataset.animated = true;
+                const target = parseInt(counter.dataset.target);
+                const suffix = counter.dataset.suffix || '';
+                const prefix = counter.dataset.prefix || '';
+                const separator = counter.dataset.separator || '';
+                const duration = 1800;
+                const step = 16;
+                const steps = duration / step;
+                let current = 0;
+
+                const timer = setInterval(() => {
+                    current += target / steps;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    let display = Math.floor(current);
+                    if (separator && display >= 1000) {
+                        display = display.toString().replace(/\B(?=(\d{3})+(?!\d))/g, separator);
+                    }
+                    counter.textContent = prefix + display + suffix;
+                }, step);
+            }
+        });
+    }
+
+    window.addEventListener('scroll', animateCounters);
+    window.addEventListener('load', animateCounters);
+</script>
+</body>
+</html>
