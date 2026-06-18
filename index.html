@@ -470,7 +470,7 @@
         .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; text-align: center; }
         .trust-item { background: #ffffff; border-radius: 22px; padding: 40px 20px; box-shadow: 0 25px 60px rgba(0,0,0,0.06); transition: transform .35s ease, box-shadow .35s ease; }
         .trust-item:hover { transform: translateY(-8px); box-shadow: 0 40px 80px rgba(0,0,0,0.12); }
-        .trust-number { font-size: 48px; font-weight: 900; background: linear-gradient(90deg, var(--aqua), var(--therm)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: block; margin-bottom: 12px; }
+        .trust-number { font-size: 48px; font-weight: 900; background: linear-gradient(90deg, var(--aqua), var(--therm)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: block; margin-bottom: 12px; white-space: nowrap; }
         .trust-item p { font-size: 15px; opacity: 0.75; }
 
         /* SERVICE PAGE */
@@ -1275,7 +1275,7 @@
                 <div class="title-line"></div>
                 <p data-i18n="tech_desc">Zaawansowane rozwiązania technologiczne, które zapewniają maksymalną wydajność, niezawodność i komfort użytkowania.</p>
             </div>
-            <div class="tech-grid" style="display:grid; grid-template-columns: repeat(3,1fr); gap:36px;">
+            <div class="tech-grid">
                 <div class="tech-box">
                     <div class="tech-line"></div>
                     <h3 data-i18n="tech1">Nowoczesna regulacja mocy</h3>
@@ -1319,7 +1319,7 @@
         <div class="section">
             <div class="trust-grid">
                 <div class="trust-item"><span class="trust-number" data-target="15" data-suffix="+">0+</span><p data-i18n="trust1">lat doświadczenia inżynieryjnego</p></div>
-                <div class="trust-item"><span class="trust-number" data-target="2000" data-suffix="+" data-separator=" ">0+</span><p data-i18n="trust2">zainstalowanych systemów</p></div>
+                <div class="trust-item"><span class="trust-number" data-target="2000" data-suffix="+" data-separator="&#160;">0+</span><p data-i18n="trust2">zainstalowanych systemów</p></div>
                 <div class="trust-item"><span class="trust-number" data-target="98" data-suffix="%">0%</span><p data-i18n="trust3">zadowolonych klientów</p></div>
                 <div class="trust-item"><span class="trust-number" data-target="5" data-prefix="3-">3-0</span><p data-i18n="trust4">lat rozszerzonej gwarancji</p></div>
             </div>
